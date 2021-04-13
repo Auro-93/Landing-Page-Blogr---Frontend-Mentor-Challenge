@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--------------------------MY STYLES------------------------>
+  <link rel="stylesheet" href="styles/css/main.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--------------OVERPASS GOOGLE FONT------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <!---------------UBUNTU GOOGLE FONT--------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | [Blogr]</title>
+</head>
+
+
+<body>
+
+  <!--------------------------HEADER-------------------------------->
+  <header class="header">
+    
+    <!-----------NAV------------>
+    <nav class="nav">
+      <div class ="nav__navbar">
+        <!------LOGO-------->
+        <a class ="nav__navbar__logo" href="#">    
+            <img src="images/logo.svg" alt="logo">
+        </a>
+        <!----DESKTOP NAV ITEMS----->
+          <ul class="nav__navbar__menu">
+            <li class="nav__navbar__menu__link">
+              <button>
+                <span>Product</span>
+                <div class = "arrow-light">
+                  <img src="images/icon-arrow-light.svg">
+                </div> 
+              </button>
+              <ul class="nav__navbar__menu__link__collapse-1">
+                <li><a href="#">Overwiew</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Integrations</a></li>
+              </ul>
+            </li>
+            <li class="nav__navbar__menu__link">
+              <button>
+              <span>Company</span>
+              <div class = "arrow-light">
+                <img src="images/icon-arrow-light.svg">
+              </div> 
+              </button>
+              <ul class="nav__navbar__menu__link__collapse-2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </li>
+            <li class="nav__navbar__menu__link">
+              <button>
+              <span> Connect</span>
+              <div class = "arrow-light">
+                <img src="images/icon-arrow-light.svg">
+              </div> 
+              </button>
+              <ul class="nav__navbar__menu__link__collapse-3">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">NewsLetter</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-----MOBILE TOGGLE ICON-------->
+          <div class="nav__navbar__toggle-menu">
+            <div class = "nav__navbar__toggle-menu__bar"></div>
+            <div class = "nav__navbar__toggle-menu__bar"></div>
+            <div class = "nav__navbar__toggle-menu__bar"></div>
+          </div>
+      </div>
+      <!-----------DESKTOP CTA---------->
+      <div class="nav__cta">
+        <a href="#">Login</a>
+        <a class = "button" href="#">Sign-up</a>
+      </div>
+      <!----MOBILE DROPDOWN MENU------->
+      <div class="nav__dropdown__menu">
+        <!---DROPDOWN MAIN --ITEMS-->
+        <button class ="nav__dropdown__menu__btn">
+          <div class = "nav__dropdown__menu__btn__link">
+            <span>Product</span>
+            <div  class ="arrow-dark">
+              <img src="images/icon-arrow-dark.svg">
+            </div>
+          </div> 
+          <ul class = "nav__dropdown__menu__btn__block">
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Overview</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Pricing</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Marketplace</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Features</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Integrations</a>
+            </li>
+          </ul>
+        </button>
+        <button class ="nav__dropdown__menu__btn">
+          <div class = "nav__dropdown__menu__btn__link">
+            <span>Company</span>
+            <div  class ="arrow-dark">
+              <img src="images/icon-arrow-dark.svg">
+            </div>
+          </div> 
+          <ul class = "nav__dropdown__menu__btn__block">
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">About</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Team</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Blog</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Careers</a>
+            </li>
+          </ul>
+        </button>
+        <button class ="nav__dropdown__menu__btn">
+          <div class = "nav__dropdown__menu__btn__link">
+            <span>Connect</span>
+            <div  class ="arrow-dark">
+              <img src="images/icon-arrow-dark.svg">
+            </div>
+          </div> 
+          <ul class = "nav__dropdown__menu__btn__block">
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">Contact</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">NewsLetter</a>
+            </li>
+            <li class="nav__dropdown__menu__btn__block__item">
+              <a href ="#">LinkedIn</a>
+            </li>
+          </ul>
+        </button>
+        <!---MOBILE CTA------------->
+        <div class="nav__dropdown__menu__cta">
+          <a href="#">Login</a>
+          <a class = "button">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+    <!-----end of NAV---------->
+
+    <!------------HERO-------->
+    <section class ="hero container">
+      <div class="hero__content">
+      <div class = "hero__content__text">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audience and build your online brand</p>
+        </div>
+        <div class ="hero__content__cta">
+          <div class="hero__content__cta__cta1">
+            <a class= "button btn-colored" href="#">
+              Start for Free
+            </a>
+        </div>
+        <div class="hero__content__cta__cta2">
+          <a class=" button btn-transparent"href="#">
+            Learn More
+          </a>
+        </div>
+        </div>
+      </div>
+    </section>
+    <!---------end of HERO--------->
+  </header>
+  <!-----------------------end of HEADER---------------------------->
+  <!------------------------SECTION 1------------------------------->
+
+  <section class="section1">
+    <div class="container">
+      <h2 class ="title-section-white">
+        Designed for the future
+      </h2>
+      <div class="wrapper">
+        <div class="image">
+          <img src="images/illustration-editor-mobile.svg">
+          <img src="images/illustration-editor-desktop.svg">
+        </div>
+        <div class="text">
+          <div class ="text-1">
+            <h2 class="title-section-white title">
+              Introducing an extensible editor
+            </h2>
+            <p class ="paragraph-section-white">
+              Blogr features an exceedingly intuitive interface which lets you focus
+              on one thing: creating content. The editor supports management of multiple
+              blogs and allows easy manipulation of embeds such as images, videos, and Markdown.
+              Extensibility with plugins and themes provide easy ways to add functionality
+              or change the looks of a blog.
+            </p>
+          </div>
+          <div class ="text-2">
+            <h2 class="title-section-white title">
+              Robust content management
+            </h2>
+            <p class ="paragraph-section-white paragraph">
+              Flexible content management enables users to easily move through posts. 
+              Increase the usability of your blog by adding customized categories, sections, 
+              format, or flow. With this functionality, you’re in full control.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!----------------------end of SECTION 1--------------------------->
+
+  <!-----------------------SECTION 2--------------------------------->
+  <section class="section2">
+    <div class="container">
+      <img src="images/illustration-phones.svg">
+      <h2 class="title-section-blue">
+        State of the Art Infrastructure
+      </h2>
+      <p class="paragraph-section-blue">
+        With reliability and speed in mind, worldwide data centers provide the backbone
+        for ultra-fast connectivity. This ensures your site will load instantly, 
+        no matter where your readers are, keeping your site competitive.  
+      </p>
+    </div>
+  </section>
+  <!-------------------end of SECTION 2 ----------------------------->
+  <!-----------------SECTION 3--------------------------------------->
+  <section class="section3">
+    <div class="container">
+      <div class="wrapper">
+        <div class="image">
+          <img src="images/illustration-laptop-mobile.svg">
+          <img src="images/illustration-laptop-desktop.svg">
+        </div>
+        <div class="text">
+          <div class ="text-1">
+            <h2 class="title-section-white title">    
+              Free, open, simple
+            </h2>
+            <p class ="paragraph-section-white paragraph">
+              Blogr is a free and open source application backed by a large community of helpful developers.
+              It supports features such as code syntax highlighting, RSS feeds, social media integration, 
+              third-party commenting tools, and works seamlessly with Google Analytics. 
+              The architecture is clean and is relatively easy to learn.
+            </p>
+          </div>
+          <div class ="text-2">
+            <h2 class="title-section-white title">
+              Powerful tooling
+            </h2>
+            <p class ="paragraph-section-white paragraph">         
+              Batteries included. We built a simple and straightforward CLI tool that makes
+              customization and deployment a breeze, butcapable of producing even the most 
+              complicated sites.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!----------------------end of SECTION 3---------------------------->
+  <!---------------------------FOOTER--------------------------------->
+  <footer class="footer">
+    <div class="container">
+      <div class="logo-container">
+        <img class="logo" src="images/logo.svg" alt="logo">
+      </div>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <h3>
+            Product
+          </h3>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Overview
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Pricing
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Marketplace
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Features
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Integrations
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <h3>
+            Company
+          </h3>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            About
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Team
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Blog
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Careers
+          </a>
+        </li>
+      </ul>
+      <ul class="footer-items">
+        <li class="footer-item">
+          <h3>
+            Connect
+          </h3>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Contact
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            Newsletter
+          </a>
+        </li>
+        <li class="footer-item">
+          <a href="#" class="footer-link">
+            LinkedIn
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Aurora Sirigu</a>.
+    </div>
+  </footer>
+  <!--------------------------end of FOOTER--------------------------->
+
+
+  <!---------------------------JQUERY CDN----------------------------->
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"   
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <!---------------------------MY SCRIPT------------------------------->
+  <script src="app/main.js"></script>
+
+ 
+</body>
+</html>

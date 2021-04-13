@@ -1,0 +1,452 @@
+
+/*-----DROPDOWN MENU ARROWS------*/
+
+.arrow-light,
+.arrow-dark{
+    display: inline-block;
+}
+.arrow-light img{
+    @include xl{
+        width: 1rem;
+        margin: 0.1rem;
+    }
+}
+
+/*-----ARROW MENU ANIMATIONS ----*/
+
+.rotate0{
+    transform: rotate(360deg);
+    @include transition;
+}
+
+.rotate180{
+    transform: rotate(180deg);
+    @include transition;
+}
+
+
+/*-----SECTION CONTAINER--------*/
+
+.container{
+    padding: 5rem 1.7rem 4rem;
+
+    @include xs{
+        padding: 3rem 1.2rem  1rem;
+    }
+
+    @include iPad{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+
+/*-----SECTION WHITE TITLES ----- */
+
+
+.title-section-white{
+    color: map-get($primary_color, very-dark-blue);
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.8rem;
+
+    @include xs{
+        font-size: 1.4rem;
+        line-height: 1.9rem;
+    }
+
+    @include iPad{
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        line-height: 3rem;
+    }
+}
+
+/*--------SECTION BLUE TITLES-------*/
+
+.title-section-blue{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.8rem;
+    margin-bottom: 2rem;
+
+    @include xs{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    @include iPad{
+        font-size: 2.6rem;
+        margin-bottom: 2.2rem;
+        line-height: 3.8rem;
+    }
+}
+
+
+/*--------- SECTION WHITE PARAGRAPH--------*/
+
+.paragraph-section-white{
+    color: map-get($neutral_color,  very-dark-grayish-blue);
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+
+    @include xs{
+        font-size: 1rem;
+        line-height: 1.9rem;
+    }
+    
+    @include iPad{
+        font-size: 1.5rem;
+        line-height: 2.9rem;
+    }
+}
+
+/*--------- SECTION BLUE PARAGRAPH-----------*/
+
+.paragraph-section-blue{
+    @extend .paragraph-section-white;
+    color: map-get($neutral_color, grayish-blue);
+}
+
+
+/*--------BUTTONS STYLES ------------*/
+
+.button{
+    text-align: center;
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: map-get($font-weight, bold);
+ 
+    @include desktop{
+        padding: 0.8rem 1.8rem;
+    }   
+}
+
+.button:hover{
+    transition: all 0.3s ease-in-out;
+}
+
+
+/*----HAMBURGER ICON SCROLL X -----*/
+
+.scroll{
+    padding: 0.6rem;
+    border-radius: 50%; 
+    box-shadow: 0px 1px 12px 4px rgba(187,60,68,0.85);
+    @include transition;
+}
+
+/*---- MENU TEXT CLICK ---*/
+
+.text-hover{
+    color: map-get($primary_color, very-dark-blue);     
+    font-weight: map-get($font-weight, regular);
+    @include transition;
+}
+
+
+/*----DESKTOP COLLAPSED MENU -----*/
+
+
+.nav__navbar__menu__link{
+    position: relative;
+    //HIDDEN MENU
+    &__collapse-1,
+    &__collapse-2,
+    &__collapse-3{
+        display: none;  
+    }
+
+    &:hover{
+         //DISPLAYED MENU
+        .nav__navbar__menu__link__collapse-1,
+        .nav__navbar__menu__link__collapse-2,
+        .nav__navbar__menu__link__collapse-3{
+            display: block;        
+            padding: 1rem;
+            position: absolute;
+            background-color:white;
+            width: 9rem;
+            border-radius: 5%;
+            font-size: 0.8rem;
+            animation-name: display;
+            @include animation;
+
+            li{
+                padding: 0.5rem;
+                cursor: pointer;
+
+                &:hover{
+                    font-weight: map-get($font-weight, bold);
+                    @include transition;
+                }
+
+                a{
+                    color: black;
+                    font-size: 0.8rem;
+                }
+            }
+        
+        @include desktop{
+            width: 10rem;
+            padding: 1rem 0.5rem;
+                
+            li{
+                padding: 0.6rem;
+                text-align: center;
+    
+                    a{
+                        font-size: 0.9rem;
+                    }
+            }
+        }
+      
+        @include xl{
+            width: 12rem;
+            padding: 2rem 1rem;
+            
+            li{
+                padding: 1rem;
+                text-align: center;
+
+                a{
+                    font-size: 1rem;
+                }
+            }
+         
+        }
+              
+        }
+    }
+}
+
+
+/*-------MOBILE COLLAPSED MENU ------- */
+
+.nav__dropdown__menu{
+    transform: translateY(-1000%);
+    text-align: center;
+    position: fixed;
+    min-height: 45%;
+    max-height: 86%;
+    top: 5rem;
+    z-index: 100;
+    overflow-y: hidden;
+    background-color: white;
+    border-radius: 0.2rem;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+    padding: 3rem  1.5rem;
+    box-shadow: -11px 15px 24px -3px rgba(23,18,18,0.29);
+    @include transition;
+
+    @include xs{
+        width: 100%;
+        margin: 0;
+    }
+    
+
+    @include iPad{
+        width: calc(100% - 5rem);
+        margin: 0 2.5rem;
+    }
+
+    @include laptop{
+        display: none;
+    }
+
+    //MAIN MENU LINK STYLES AND MEDIA QUERIES
+
+    &__btn{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        padding: 0.6rem 0;
+        font-family: inherit;
+        font-weight: map-get($font-weight, medium);
+        font-size: 0.9rem;
+        
+        span{
+            color: black;
+            padding: 0.4rem 0.4rem 0.4rem 1rem;
+            cursor: pointer;
+            
+            @include transition;
+
+        
+        .arrow-dark{
+            cursor: pointer;
+        }
+
+        }
+
+        // SUBMENU STYLES AND MEDIA QUERIES
+
+        &__block{
+            display: none;
+            margin: 1rem auto 0;
+            padding: 1rem;
+            background-color: map-get($neutral_color , light-grayish-blue);
+            border-radius: 0.2rem;
+           
+        
+            &__item{
+                padding-bottom: 1rem;
+    
+                a{
+                    color: map-get($primary_color, very-dark-blue);
+                    font-weight: map-get($font-weight, medium);
+                    font-size: 0.7rem;
+
+                    &:active{
+                        text-decoration: underline;
+                        @include transition;
+                    }
+                }
+            }
+        //DISPLAYED SUBMENU
+        &.display{
+            display: block;
+            animation-name: display;
+           @include animation;
+        }
+        //HIDDEN SUBMENU
+        &.hide{
+            animation-name: hide;
+            @include animation;
+        }
+
+        @include transition;
+    
+        }
+    }
+
+
+    //MOBILE COLLAPSED MENU CTA
+
+    &__cta{
+        border-top: 1px solid map-get($neutral_color , grayish-blue);
+        margin: 3rem 0.6rem 1rem;
+        padding: 1.5rem 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        a{
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+
+        a:first-child{
+            color: black;
+            font-weight: map-get($font-weight, medium);
+
+            &:active{
+                text-decoration: underline;
+            }
+            
+        }
+
+        a:not(:last-child){
+            margin-bottom: 0.7rem;
+        }
+
+        a:last-child{
+            color: white !important;
+            background: linear-gradient(to right, map-get($gradient, very-light-red), map-get($gradient, medium-light-red) 60%, map-get($gradient, medium-light-red) 100%);
+            font-size: 0.7rem;
+            
+            &:active{
+                background: map-get($gradient, very-light-red);
+                @include transition;
+            }
+        }
+
+    @include transition;
+    }
+
+@include transition;
+
+
+//DISPLAYED MOBILE COLLAPSED MENU
+&.visible{
+    transform: translateY(0);
+    }
+}
+
+
+/*-----------ANIMATIONS -----------------*/
+
+//DISPLAYED MOBILE COLLAPSED MENU SUBMENU ANIMATION
+@keyframes display{
+    0%{
+        display:none;
+    }
+    1%{
+        display: block;
+        opacity: 0.3;
+        transform: translateY(-2rem);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-1rem);
+    }
+
+    70%{
+        opacity: 0.7;
+        transform: translateY(-0.5rem);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+};
+
+//HIDDEN MOBILE COLLAPSED MENU SUBMENU ANIMATION
+@keyframes hide{
+    0%{
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+    1%{
+        opacity: 0.7;
+        transform: translateY(-0.5rem);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-1rem);
+    }
+
+    70%{
+        opacity: 0.3;
+        transform: translateY(-2rem);
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+};
+
+//ARROW DOWN-UP ROTATION ANIMATION
+@keyframes rotate{
+    0%{
+        transform: rotate(180deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+
+
+
+
+

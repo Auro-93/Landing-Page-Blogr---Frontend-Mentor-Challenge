@@ -1,0 +1,175 @@
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    //NAVBAR LAYOUT MEDIA QUERIES 
+
+    &__navbar{
+       @include iPad{                   
+            display: flex;
+            align-items: center;
+       }
+
+       //LOGO CONTAINER MEDIA QUERIES
+
+       &__logo{
+        @include iPad{
+            margin-left: 2.5rem;
+            margin-top: 0.8rem;
+        }
+        @include laptop{
+            margin-left: 5rem;
+            margin-top: 0;
+        }
+        @include desktop{
+            margin-left: 2.3rem;
+        }
+
+        //LOGO IMG STYLES AND MEDIA QUERIES
+
+        img{
+            margin: 0.5rem 2rem 0;
+            width: 3.5rem;
+            @include iPad{
+                width: 4rem;
+                margin: -0.5rem 2.5rem 0 0;
+            }
+            @include laptop{
+                margin-right: 2rem;
+            }
+            @include desktop{
+                width: 6rem;
+                margin: -0.5rem 3rem 0 0;
+            }
+        }
+       }
+
+        //NAVBAR MENU STYLES AND MEDIA QUERIES
+
+        &__menu{
+            display: none;
+            @include laptop{
+                display: flex;
+                align-items: center;
+                &__link:not(:last-child){
+                    margin: 0 1rem 0 0;
+                }
+            }
+
+            //NAVBAR MENU ITEMS STYLES/MEDIA QUERIES/HOVER STATES
+
+            &__link{ 
+                button{
+                   margin-bottom: 0.8rem;
+                   background-color: transparent;
+                   border: none;
+                   outline: none;
+                   cursor: pointer;
+                   span{
+                    margin: 0.3rem;
+                    color: white;
+                    @include desktop{
+                        font-size: 1.2rem;
+                    }
+                    &:hover{
+                        font-weight: map-get($font-weight, bold);
+                        text-decoration: underline;
+                        transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }   
+            }
+        }
+
+        //TOGGLE MENU STYLES AND MEDIA QUERIES
+
+        &__toggle-menu{
+                position: fixed;
+                right: 2rem;
+                top: 3.13rem;
+                z-index: 100;
+                transform: translate(0, -50%);
+                cursor: pointer;
+                @include iPad{
+                    right: 2.5rem;
+                }
+                @include laptop{
+                    display: none;
+                }
+                &__bar{
+                    width: 1.9rem;
+                    height: 0.1rem;
+                    background-color: map-get($neutral-color, white);
+                    margin: 0.4rem 0;
+                    transition: all 0.3s linear;
+                }
+
+        //HAMBURGER ICON TO X ICON ANIMATION
+
+        &.open{
+            > div:first-child{
+                transform: translateY(6px) rotate(132deg);
+            }        
+            > div:nth-child(2){
+                opacity: 0;  
+            }     
+            > div:last-child{
+                transform: translateY(-8.5px) rotate(-132deg);
+            }
+        }
+        }
+    }
+
+    //CTA NAVBAR DESKTOP STYLES AND MEDIA QUERIES
+    
+    &__cta{
+        display: none;
+        @include iPad{
+            a:first-child{
+                margin-left: 2rem;
+            }
+            a:last-child{
+                margin-right: 0;
+            }
+        }
+        @include laptop{
+                display: block;
+                margin-right: 4rem;
+                margin-top: -0.8rem;
+                font-size: 1.2rem;
+        @include desktop{
+                margin-right: 2rem;
+                margin-top: -1rem;
+        }
+            a{
+                margin-right: 1rem;
+                color: white;
+            }
+
+            a:first-child{
+                 @include desktop{
+                    font-size: 1rem;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .button{
+                color: map-get($primary_color, light-red);
+                background-color: white;
+                    @include desktop{
+                        font-size: 1rem;
+                    }
+                &:hover{
+                    background-color: map-get($primary_color, very-light-red);
+                    color: white;
+                    }
+            }
+        }
+    }
+}
+
+

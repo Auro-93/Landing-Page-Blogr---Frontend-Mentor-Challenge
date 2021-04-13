@@ -1,0 +1,144 @@
+/*-------------------FOOTER STYLES AND MEDIA QUERIES----------------*/
+
+
+
+.footer{
+    position: relative;
+    border-top-right-radius: 5rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: map-get($neutral-color,  very-dark-black-blue);
+    margin-top: 3rem;
+    text-align: center;
+
+    @include xs{
+        border-top-right-radius: 0;
+    }
+
+    @include laptop{
+        text-align: left;
+        margin-top: 5rem;
+    }
+
+
+    //CONTAINER STYLES AND MEDIA QUERIES
+    div:first-child{
+
+        @include laptop{
+            display: flex;
+            justify-content: center;
+            margin-bottom: -2rem;
+            padding-top: 4rem;
+        }
+
+        //LOGO CONTAINER STYLES AND MEDIA QUERIES
+        .logo-container{
+            margin-bottom: 4rem;
+
+            @include laptop{
+                flex: 1.4;
+                padding-top: 0.5rem;
+            }
+
+            //LOGO STYLES AND MEDIA QUERIES
+            .logo{
+                margin-top: 2rem;
+
+                @include xs{
+                    margin-top: 2rem;
+                    width: 7rem;
+                    height: 3rem;
+                }
+
+                @include laptop{
+                    width: 8rem;
+                    height: 3.5rem;
+                    margin: 0 auto;
+                }
+               
+            }
+             
+        }
+
+        //FOOTER LISTS STYLES AND MEDIA QUERIES
+        .footer-items{
+    
+            @include laptop{
+                flex: 1;
+            }
+           
+            //FOOTER LI STYLES AND MEDIA QUERIES
+            .footer-item{
+
+                //FOOTER LIST TITLES STYLES
+                h3{
+                    color: white;
+                    padding: 1rem 0 3rem 0;
+                    font-weight: lighter;
+                    pointer-events: none;
+                    font-size: 1.5rem;
+                }
+            
+                //FOOTER LINKS STYLES AND MEDIA QUERIES
+                .footer-link{
+                    color: map-get($neutral-color, grayish-blue);
+                    font-size: 1.3rem;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                    padding-bottom: 0.8rem;
+
+                    @include iPad{
+                        font-size: 1.5rem;
+                        padding-bottom: 1rem;
+                    }
+
+                    @include laptop{
+                        font-size: 1.3rem;
+                        padding-bottom: 1.5rem;
+                    }
+                    
+                &:hover{
+                    color: map-get($primary-color, light-red);
+                }}
+           }
+
+        //LAST LIST MEDIA QUERIES
+        &:last-child{
+            @include laptop{
+                flex: 1.4;
+            }
+        }
+
+        //ALL LISTS EXCEPT THE LAST STYLES
+        &:not(last-child){
+            margin-bottom: 3rem;
+        }
+        }
+    }
+
+    //CREDITS STYLES AND MEDIA QUERIES
+    .attribution{
+        margin-top: 1rem;
+        color: map-get($neutral-color, grayish-blue);
+        font-size: 0.8rem;
+        padding: 1rem 1rem 2rem;
+
+        @include iPad{
+            font-size: 1.2rem;
+        }
+
+        @include laptop{
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        a{
+            color: map-get($primary-color, light-red);
+            text-decoration: underline;
+        }
+    }
+}
+
+   
+    

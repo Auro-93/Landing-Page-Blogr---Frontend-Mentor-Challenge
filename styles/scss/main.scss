@@ -1,0 +1,46 @@
+@import "variables";
+@import "header";
+@import "nav";
+@import "hero";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "footer";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+html{
+    font-size: 14px;
+   
+}
+body{
+    background-color: map-get($neutral_color, light-grayish-blue);
+    width: 100wv;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+
+
+@import "utilities";
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+/*------COLORS -----*/
+
+$primary_color: (
+    light-red: hsl(356, 100%, 66%),  //CTA text
+    very-light-red: hsl(355, 100%, 74%),  //CTA hover bg
+    very-dark-blue: hsl(208, 49%, 24%)    //headings
+);
+
+$neutral_color: (
+    white: hsl(0, 0%, 100%),    //text
+    grayish-blue: hsl(240, 2%, 79%),  //footer text
+    light-grayish-blue: hsl(240, 2%, 97%), //customized bg and border
+    very-dark-grayish-blue: hsl(207, 13%, 34%),  //body copy
+    very-dark-black-blue: hsl(240, 10%, 16%)  //footer bg
+);
+
+$gradient: (
+    very-light-red: hsl(13, 100%, 72%),  //bg gradient - intro/cta mobile nav
+    medium-light-red: hsl(13, 100%,60%), //customized bg gradient
+    light-red: hsl(353, 100%, 55%),       //bg gradient - intro/cta mobile nav
+    very-dark-grey-blue: hsl(237, 17%, 21%),  //bg gradient - body
+    very-dark-desaturated-blue: hsl(237, 23%, 32%)   //bg gradient - body
+);
+
+
+/*------FONTS--------*/
+
+$font-family: (
+    overpass: "'Overpass', sans-serif",
+    ubuntu: "'Ubuntu', sans-serif"
+);
+
+$font-weight: (
+    light: 300,            /*overpass*/
+    regular: 400,         /*ubuntu*/
+    medium: 500,          /*ubuntu*/
+    semi-bold: 600,       /*overpass*/
+    bold: 700             /*ubuntu*/
+);
+
+
+/* ------- MEDIA QUERIES ----- */
+
+/*The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+
+@mixin xs {
+    @media screen and(max-width: 315px)
+    { @content; }
+};
+
+@mixin iPad {
+     @media screen and (min-width: 480px) 
+     { @content; }
+};
+
+@mixin laptop {
+    @media screen and (min-width: 768px) 
+    { @content; }
+};
+
+@mixin desktop {
+    @media screen and (min-width: 1300px) 
+    { @content; }
+};
+
+@mixin xl{
+    @media screen and (min-width: 1500px) 
+    { @content; }
+};
+
+
+/*------ANIMATIONS ----- */
+
+@mixin animation{
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+/*-----TRANSITIONS-----*/
+
+@mixin transition{
+    transition: all 0.3s ease-in-out;
+}
+

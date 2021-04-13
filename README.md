@@ -1,6 +1,3 @@
-# Landing-Page-Blogr---Frontend-Mentor-challenge
-Mobile first and responsive landing page with Flexbox and Sass
-
 # Frontend Mentor - Blogr landing page solution
 
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -68,5 +65,4 @@ It was also a good opportunity to experiment, for the first time, with a bit of 
 ### Continued development
 
 The goal of my next projects will be to move further and further away from the "spaghetti-code" and make my code more structured and maintainable.
-
 

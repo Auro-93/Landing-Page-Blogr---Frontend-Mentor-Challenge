@@ -1,0 +1,112 @@
+/*----------SECTION 1 STYLES AND MEDIA QUERIES -------*/
+
+
+.section1{
+    background-color: map-get($neutral_color,  light-grayish-blue);
+    font-family: "Overpass", sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+
+    @include desktop{
+        text-align: left;
+    }
+
+    //FIRST TITLE STYLES AND MEDIA QUERIES
+    .container > h2:first-child{
+        margin-top: 2.6rem;
+        margin-bottom: 0;
+
+        @include desktop{
+            margin-bottom: 7rem;
+            text-align: center;
+        }
+    }
+
+    //IMAGE AND TEXT WRAPPER MEDIA QUERIES
+    .wrapper{
+        @include desktop{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+       //IMAGE CONTAINER STYLES AND MEDIA QUERIES
+      .image{
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+   
+          @include desktop{
+            justify-content: flex-start;
+            order: 2;
+            width: 20%;
+          }
+
+          //MOBILE IMAGE STYLES AND MEDIA QUERIES
+          img:first-child{
+              padding: 3rem 0;
+              width: 120%;
+
+              @include xs{
+                width: 120%;
+            }
+              @include iPad{
+                  width: 100%;
+                  padding: 4rem;
+              }
+              @include laptop{
+                  display: none;
+              }
+          }
+
+          //DESKTOP IMAGE STYLES AND MEDIA QUERIES
+          img:last-child{
+              display: none;
+
+              @include laptop{
+                display: block;
+                
+              }
+
+              @media screen and(min-width: 768px) and(max-width: 1299px){
+                width: 35%;
+                padding: 2rem 0;
+              }
+
+
+              @include desktop{
+                transform: translateY(-4rem);
+              }
+              @include desktop{
+                transform: translateY(-6rem);
+              }
+
+          }  
+      }
+
+      //TEXT STYLES AND MEDIA QUERIES
+      .text{
+
+            @include desktop{
+                max-width: 60%;
+                padding: 0 7rem 0 2rem;
+            }
+
+            @include xl{
+                max-width: 65%;
+            }
+            
+          //FIRST PARAGRAPH STYLES AND MEDIA QUERIES
+          .text-1{
+              margin-bottom: 3rem;
+
+              @include iPad{
+                  margin-bottom: 4rem;
+              }
+          }
+      }
+    }
+}

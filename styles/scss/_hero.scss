@@ -1,0 +1,132 @@
+/*----------HERO STYLES AND MEDIA QUERIES -----*/
+
+.hero{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+    height: auto;
+
+
+
+    &__content{
+        text-align: center;
+        width: 100%;
+     
+
+        @include xs{
+            padding-bottom: 2rem;
+        }
+
+       //HERO TEXT STYLES AND MEDIA QUERIES
+        &__text{
+            padding: 1rem 0 2rem;
+            word-spacing: 0.1rem;
+
+            @include xs{
+                padding: 1rem 0 1rem;
+            }
+
+            h1{
+                margin: 1rem 0 2rem;
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+               
+
+                @include xs{
+                    font-size: 1.4rem;
+                    line-height: 1.9rem;
+                    margin: 2rem 0rem 1rem;
+                }
+
+
+                @include iPad{
+                    font-size: 2.4rem;
+                    margin-bottom: 2rem;
+                    line-height: 3rem;
+                }
+                @include desktop{
+                    font-size: 2.9rem;
+                    font-weight: 600;
+                }
+
+            }
+            p{
+                font-size: 1rem;
+                margin: 0 2rem 1rem;
+                line-height: 1.4rem;
+                color: map-get($neutral_color, light-grayish-blue);
+
+                @include iPad{
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+
+        //HERO CTA STYLES AND MEDIA QUERIES
+        &__cta{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0.5rem 0;
+            font-size: 1rem;
+          
+
+            @include xs{
+                flex-direction: column;
+                font-size: 0.8rem;
+            }
+
+            @include iPad{
+                font-size: 1.4rem;
+            }
+
+            @include laptop{
+                margin-top: 0.8rem;
+            }
+
+            &__cta1{
+                @include xs{
+                    margin-bottom: 2rem;
+                }
+
+            }
+
+                .btn-colored{
+                    margin-right: 0.5rem;
+                    background-color: white;
+                    color: map-get($primary_color, light-red);
+
+                    @include xs{
+                        margin-right: 0;
+                    }
+
+                    &:hover{
+                        background-color: map-get($primary_color, very-light-red);
+                        color: white;
+                        @include transition;
+                    }
+
+                }
+
+                .btn-transparent{
+                    background-color: transparent;
+                    color: white;
+                    border: 1px solid white;
+
+
+
+                    &:hover{
+                        background-color: white;
+                        color: map-get($primary_color, light-red);
+                        @include transition;
+                    }
+                }
+        }
+    }
+
+}
