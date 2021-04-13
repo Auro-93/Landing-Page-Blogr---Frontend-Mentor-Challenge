@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!-MY STYLES->
+  <!--------------------------MY STYLES------------------------>
   <link rel="stylesheet" href="styles/css/main.min.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <!-OVERPASS GOOGLE FONT->
+  <!--------------OVERPASS GOOGLE FONT------------------------->
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
-  <!-UBUNTU GOOGLE FONT->
+  <!---------------UBUNTU GOOGLE FONT--------------------------->
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | [Blogr]</title>
 </head>
@@ -16,24 +16,24 @@
 
 <body>
 
-  <!-HEADER->
+  <!--------------------------HEADER-------------------------------->
   <header class="header">
     
-    <!-NAV->
+    <!-----------NAV------------>
     <nav class="nav">
       <div class ="nav__navbar">
-        <!-LOGO->
+        <!------LOGO-------->
         <a class ="nav__navbar__logo" href="#">    
             <img src="images/logo.svg" alt="logo">
         </a>
-        <!-DESKTOP NAV ITEMS->
+        <!----DESKTOP NAV ITEMS----->
           <ul class="nav__navbar__menu">
             <li class="nav__navbar__menu__link">
               <button>
                 <span>Product</span>
-                <div class = "arrow-light">
-                  <img src="images/icon-arrow-light.svg" alt="light-arrow-down">
-                </div> 
+                <span class = "arrow-light">
+                  <img src="images/icon-arrow-light.svg">
+                </span> 
               </button>
               <ul class="nav__navbar__menu__link__collapse-1">
                 <li><a href="#">Overwiew</a></li>
@@ -46,9 +46,9 @@
             <li class="nav__navbar__menu__link">
               <button>
               <span>Company</span>
-              <div class = "arrow-light">
-                <img src="images/icon-arrow-light.svg" alt="light-arrow-down">
-              </div> 
+              <span class = "arrow-light">
+                <img src="images/icon-arrow-light.svg">
+              </span> 
               </button>
               <ul class="nav__navbar__menu__link__collapse-2">
                 <li><a href="#">About</a></li>
@@ -60,9 +60,9 @@
             <li class="nav__navbar__menu__link">
               <button>
               <span> Connect</span>
-              <div class = "arrow-light">
-                <img src="images/icon-arrow-light.svg" alt="light-arrow-down">
-              </div> 
+              <span class = "arrow-light">
+                <img src="images/icon-arrow-light.svg">
+              </span> 
               </button>
               <ul class="nav__navbar__menu__link__collapse-3">
                 <li><a href="#">Contact</a></li>
@@ -71,26 +71,26 @@
               </ul>
             </li>
           </ul>
-          <!-MOBILE TOGGLE ICON->
+          <!-----MOBILE TOGGLE ICON-------->
           <div class="nav__navbar__toggle-menu">
             <div class = "nav__navbar__toggle-menu__bar"></div>
             <div class = "nav__navbar__toggle-menu__bar"></div>
             <div class = "nav__navbar__toggle-menu__bar"></div>
           </div>
       </div>
-      <!-DESKTOP CTA->
+      <!-----------DESKTOP CTA---------->
       <div class="nav__cta">
         <a href="#">Login</a>
         <a class = "button" href="#">Sign-up</a>
       </div>
-      <!-MOBILE DROPDOWN MENU->
+      <!----MOBILE DROPDOWN MENU------->
       <div class="nav__dropdown__menu">
-        <!-DROPDOWN MAIN ITEMS->
-        <button class ="nav__dropdown__menu__btn">
+        <!---DROPDOWN MAIN --ITEMS-->
+        <div class ="nav__dropdown__menu__btn">
           <div class = "nav__dropdown__menu__btn__link">
             <span>Product</span>
             <div  class ="arrow-dark">
-              <img src="images/icon-arrow-dark.svg" alt="dark-arrow-down">
+              <img src="images/icon-arrow-dark.svg">
             </div>
           </div> 
           <ul class = "nav__dropdown__menu__btn__block">
@@ -110,12 +110,12 @@
               <a href ="#">Integrations</a>
             </li>
           </ul>
-        </button>
-        <button class ="nav__dropdown__menu__btn">
+        </div>
+        <div class ="nav__dropdown__menu__btn">
           <div class = "nav__dropdown__menu__btn__link">
             <span>Company</span>
             <div  class ="arrow-dark">
-              <img src="images/icon-arrow-dark.svg" alt="dark-arrow-down">
+              <img src="images/icon-arrow-dark.svg">
             </div>
           </div> 
           <ul class = "nav__dropdown__menu__btn__block">
@@ -132,12 +132,12 @@
               <a href ="#">Careers</a>
             </li>
           </ul>
-        </button>
-        <button class ="nav__dropdown__menu__btn">
+        </div>
+        <div class ="nav__dropdown__menu__btn">
           <div class = "nav__dropdown__menu__btn__link">
             <span>Connect</span>
             <div  class ="arrow-dark">
-              <img src="images/icon-arrow-dark.svg" alt="dark-arrow-down">
+              <img src="images/icon-arrow-dark.svg">
             </div>
           </div> 
           <ul class = "nav__dropdown__menu__btn__block">
@@ -151,17 +151,17 @@
               <a href ="#">LinkedIn</a>
             </li>
           </ul>
-        </button>
-        <!-MOBILE CTA->
+        </div>
+        <!---MOBILE CTA------------->
         <div class="nav__dropdown__menu__cta">
           <a href="#">Login</a>
           <a class = "button">Sign Up</a>
         </div>
       </div>
     </nav>
-    <!-end of NAV->
+    <!-----end of NAV---------->
 
-    <!-HERO->
+    <!------------HERO-------->
     <section class ="hero container">
       <div class="hero__content">
       <div class = "hero__content__text">
@@ -182,12 +182,11 @@
         </div>
       </div>
     </section>
-    <!-end of HERO->
-    
+    <!---------end of HERO--------->
   </header>
-  <!-end of HEADER->
-  
-  <!-SECTION 1->
+  <!-----------------------end of HEADER---------------------------->
+  <!------------------------SECTION 1------------------------------->
+
   <section class="section1">
     <div class="container">
       <h2 class ="title-section-white">
@@ -195,8 +194,8 @@
       </h2>
       <div class="wrapper">
         <div class="image">
-          <img src="images/illustration-editor-mobile.svg" alt="editor-mobile-svg">
-          <img src="images/illustration-editor-desktop.svg" alt="editor-desktop-svg">
+          <img src="images/illustration-editor-mobile.svg">
+          <img src="images/illustration-editor-desktop.svg">
         </div>
         <div class="text">
           <div class ="text-1">
@@ -225,12 +224,13 @@
       </div>
     </div>
   </section>
-  <!-end of SECTION 1->
+  
+  <!----------------------end of SECTION 1--------------------------->
 
-  <!-SECTION 2->
+  <!-----------------------SECTION 2--------------------------------->
   <section class="section2">
     <div class="container">
-      <img src="images/illustration-phones.svg" alt="phones-svg">
+      <img src="images/illustration-phones.svg">
       <h2 class="title-section-blue">
         State of the Art Infrastructure
       </h2>
@@ -241,15 +241,14 @@
       </p>
     </div>
   </section>
-  <!-end of SECTION 2->
-  
-  <!-SECTION 3->
+  <!-------------------end of SECTION 2 ----------------------------->
+  <!-----------------SECTION 3--------------------------------------->
   <section class="section3">
     <div class="container">
       <div class="wrapper">
         <div class="image">
-          <img src="images/illustration-laptop-mobile.svg" alt="laptop-mobile-svg">
-          <img src="images/illustration-laptop-desktop.svg" alt="laptop-mobile-svg">
+          <img src="images/illustration-laptop-mobile.svg">
+          <img src="images/illustration-laptop-desktop.svg">
         </div>
         <div class="text">
           <div class ="text-1">
@@ -277,9 +276,8 @@
       </div>
     </div>
   </section>
-  <!-end of SECTION 3->
-  
-  <!-FOOTER->
+  <!----------------------end of SECTION 3---------------------------->
+  <!---------------------------FOOTER--------------------------------->
   <footer class="footer">
     <div class="container">
       <div class="logo-container">
@@ -372,15 +370,15 @@
       Coded by <a href="#">Aurora Sirigu</a>.
     </div>
   </footer>
-  <!-end of FOOTER->
+  <!--------------------------end of FOOTER--------------------------->
 
 
-  <!-JQUERY CDN->
+  <!---------------------------JQUERY CDN----------------------------->
   <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"   
   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
   crossorigin="anonymous"></script>
-  <!-MY SCRIPT->
+  <!---------------------------MY SCRIPT------------------------------->
   <script src="app/main.js"></script>
 
  
