@@ -25,38 +25,38 @@ Users should be able to:
 
 ### Screenshot
 
-  Mobile (375px) layout
-  ![](my-project-screenshots/375px.png)
+Mobile (375px) layout
+![](my-project-screenshots/375px.png)
 
-  Desktop (1440px) layout
-  ![](my-project-screenshots/1440px.png)
+Desktop (1440px) layout
+![](my-project-screenshots/1440px.png)
   
-  Desktop hover button 1
-  ![](my-project-screenshots/desktop-hover-button-1.png)
+Desktop hover button 1
+![](my-project-screenshots/desktop-hover-button-1.png)
 
-  Desktop hover button 2
-  ![](my-project-screenshots/desktop-hover-button-2.png)
+Desktop hover button 2
+![](my-project-screenshots/desktop-hover-button-2.png)
   
-  Desktop hover button 3
-  ![](my-project-screenshots/desktop-hover-button-3.png)
+Desktop hover button 3
+![](my-project-screenshots/desktop-hover-button-3.png)
   
-  Desktop hover menu
-  ![](my-project-screenshots/desktop-hover-menu.png)
+Desktop hover menu
+![](my-project-screenshots/desktop-hover-menu.png)
   
-  Footer hover link
-  ![](my-project-screenshots/footer-hover-link.png)
+Footer hover link
+![](my-project-screenshots/footer-hover-link.png)
   
-  Mobile navbar
-  ![](my-project-screenshots/mobile-navbar.png)
+Mobile navbar
+![](my-project-screenshots/mobile-navbar.png)
   
-  Mobile fixed navbar 1
-  ![](my-project-screenshots/mobile-fixed-navbar-1.png)
+Mobile fixed navbar 1
+![](my-project-screenshots/mobile-fixed-navbar-1.png)
   
-  Mobile fixed navbar 2
-  ![](my-project-screenshots/mobile-fixed-navbar-2.png)
+Mobile fixed navbar 2
+![](my-project-screenshots/mobile-fixed-navbar-2.png)
   
-  Mobile submenu
-  ![](my-project-screenshots/mobile-submenu.png)
+Mobile submenu
+![](my-project-screenshots/mobile-submenu.png)
 
 
 
