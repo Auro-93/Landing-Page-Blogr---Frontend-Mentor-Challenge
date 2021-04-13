@@ -41,10 +41,10 @@ Desktop hover button 3
 ![](my-project-screenshots/desktop-hover-button-3.png)
   
 Desktop hover menu
-![](my-project-screenshots/desktop-hover-menu.png)
+![]
   
 Footer hover link
-![](my-project-screenshots/footer-hover-link.png)
+![](
   
 Mobile navbar
 ![](my-project-screenshots/mobile-navbar.png)
